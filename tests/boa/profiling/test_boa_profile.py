@@ -7,6 +7,9 @@ from tests.boa.utils.tokens import mint_for_testing
 
 NUM_RUNS = 100
 
+import vyper
+assert vyper.evm.opcodes.DEFAULT_EVM_VERSION == "cancun"
+
 
 def _choose_indices():
     i = random.randint(0, 2)
