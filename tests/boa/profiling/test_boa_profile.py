@@ -116,6 +116,7 @@ def test_profile_amms(swap_with_deposit, coins, user, math_contract):
     with boa.env.prank(user):
 
         for k in range(NUM_RUNS):
+            print(f"run {k}")
 
             # deposit:
             _random_deposit(swap)
